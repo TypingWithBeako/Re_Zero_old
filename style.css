@@ -178,53 +178,6 @@ nav a {
     width: auto;
     height: auto;
 }
-#text_to_change, #bodytext, #songname {
-transition: opacity 0.5s, transform 0.5s; /* Define the transition properties */
-}
-
-.slide-in {
-animation: slideIn 3.25s ease;
-animation-delay:2s;
-animation-fill-mode: backwards;
-}
-.fade-in{
-    animation: fadeIn 2.5s ease;
-}
-.fade-in-title{
-    animation: fadeIn 2.5s ease;
-    animation-delay:1.5s;
-    animation-fill-mode: both;
-}
-.fade-in-bodytext{
-    animation: fadeIn 2.5s ease;
-    animation-delay:2.5s;
-    animation-fill-mode: both;
-}
-.fade-in-songname{
-    animation: fadeIn 2.5s ease;
-    animation-delay:3.25s;
-    animation-fill-mode: both;
-}
-@keyframes fadeIn {
-from {
-    transform: translateX(0%);
-    opacity: 0;
-}
-to {
-    transform: translateX(0);
-    opacity: 1;
-}
-}
-@keyframes slideIn {
-from {
-    transform: translateX(-100%);
-    opacity: 0;
-}
-to {
-    transform: translateX(0);
-    opacity: 1;
-}
-}
 @media only screen and (max-width:1990px) {
     .emilia {
         display:none;
