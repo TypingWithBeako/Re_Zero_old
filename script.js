@@ -103,12 +103,6 @@
     const S3 = document.getElementById('Season3Content');
 
     moveableimg.addEventListener('click', function(){
-        
-        if (isAnimating || this.hasAttribute('disabled')) {
-        return; // Exit the function if an animation is already in progress or the element is disabled
-        }
-        isAnimating = true; // Set the flag to indicate that an animation is in progress
-        this.setAttribute('disabled', 'disabled'); // Disable the clickable element
         clickCount++;
         console.log("Image clicked!"); // Add this line for testing
         if (clickCount % 2 === 1) {
@@ -137,10 +131,6 @@
             isSwitching = false; 
             nextButton.style.display ='inline';
         }
-        setTimeout(() => {
-        isAnimating = false; // Reset the flag once the animation is complete
-        this.removeAttribute('disabled'); // Re-enable the clickable element
-        }, 5751); // Adjust the timeout value to match your animation duration
     });
     function handleFontSizeChange(mediaQuery) {
          // Change font size for mobile devices
